@@ -9,14 +9,13 @@ const PlayListItemWithLink = withLink(PlaylistItem)
 const PlaylistItems = ({ videos, active }) => {
     return (
         <StyledPlaylistitems>
-            {videos.map(video => {
-                return <PlayListItemWithLink
+            {videos.map(video => <PlayListItemWithLink
                         key={video.id}
                         video={video}
                         active={video.id === active.id ? true : false}
                         played={video.played}
                 />
-            })}
+            )}
         </StyledPlaylistitems>
     )
 }

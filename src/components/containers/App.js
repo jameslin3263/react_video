@@ -1,7 +1,7 @@
 import React from 'react';
 import WbnPlayer from './WbnPlayer'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
-import GlobalStyles from '../styles/GlobalStyle'
+import GlobalStyle from '../styles/GlobalStyle'
 
 const App = () => {
   return (
@@ -9,9 +9,9 @@ const App = () => {
       <>
         <Switch>
           <Route exact path="/" component={WbnPlayer} />
-          <Route exact path="/:activeVideo" compoent={WbnPlayer} />
+          <Route exact path="/:activeVideo" component={WbnPlayer} />
         </Switch>
-        <GlobalStyles />
+        <GlobalStyle />
       </>
     </BrowserRouter>
   )
